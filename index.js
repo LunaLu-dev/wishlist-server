@@ -42,7 +42,7 @@ const server = http.createServer(async (req, res) => {
 });
 
 const PORT = 7000;
-const HOST = '192.168.1.69'
+const HOST = '192.168.1.69';
 server.listen(PORT, () => {
-    console.log(`Server running on ${HOST} : ${PORT}`);
+    console.log(`Server running on ${HOST}:${PORT}`);
 });
