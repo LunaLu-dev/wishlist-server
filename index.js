@@ -12,6 +12,13 @@ async function getCurrency(amount, from_curr, to_curr) {
 
 const server = http.createServer(async (req, res) => {
 
+    res.statusCode = 200;
+
+    // Setting CORS headers to allow requests from your front-end
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
     const query = url.parse(req.url, true).query;
     const {amount, from_curr, to_curr} = query;
 
@@ -35,6 +42,7 @@ const server = http.createServer(async (req, res) => {
 });
 
 const PORT = 7000;
+const HOST = '192.168.1.69'
 server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on ${HOST} : ${PORT}`);
 });
