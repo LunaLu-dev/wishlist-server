@@ -1,0 +1,18 @@
+{
+  "name": "wishlist-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "currency-converter-lt": "^2.0.1"
+  },
+  "devDependencies": {
+    "@m00nbyte/currency-converter": "^1.0.1"
+  }
+}
